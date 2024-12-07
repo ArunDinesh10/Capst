@@ -128,7 +128,6 @@ app.get("/applications", (req, res) => {
   });
 });
 
-// Update Application Status
 app.put("/applications/:id/status", (req, res) => {
   const { id } = req.params;
   const { status } = req.body;
@@ -146,7 +145,6 @@ app.put("/applications/:id/status", (req, res) => {
   });
 });
 
-// Start Server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
